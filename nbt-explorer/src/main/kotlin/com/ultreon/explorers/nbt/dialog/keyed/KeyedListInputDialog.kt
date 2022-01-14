@@ -79,7 +79,7 @@ class KeyedListInputDialog(parentShell: Shell?) : TitleAreaDialog(parentShell) {
 
     private fun createValueInput(container: Composite) {
         val lbtLastName = Label(container, SWT.NONE)
-        lbtLastName.text = "String Int value"
+        lbtLastName.text = "List type"
         val valueData = GridData()
         valueData.grabExcessHorizontalSpace = true
         valueData.horizontalAlignment = GridData.FILL

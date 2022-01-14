@@ -19,7 +19,7 @@ class IndexedLongInputDialog(parentShell: Shell?) : TitleAreaDialog(parentShell)
 
     override fun create() {
         super.create()
-        setTitle("Create New Long Value")
+        setTitle("Create New Long Int Value")
 //        setMessage("This is a TitleAreaDialog", IMessageProvider.INFORMATION)
     }
 
@@ -54,7 +54,7 @@ class IndexedLongInputDialog(parentShell: Shell?) : TitleAreaDialog(parentShell)
 
     private fun createValueInput(container: Composite) {
         val lbtLastName = Label(container, SWT.NONE)
-        lbtLastName.text = "Long value"
+        lbtLastName.text = "long Int value"
         val valueData = GridData()
         valueData.grabExcessHorizontalSpace = true
         valueData.horizontalAlignment = GridData.FILL

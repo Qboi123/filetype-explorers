@@ -57,7 +57,7 @@ class KeyedStringInputDialog(parentShell: Shell?) : TitleAreaDialog(parentShell)
 
     private fun createValueInput(container: Composite) {
         val lbtLastName = Label(container, SWT.NONE)
-        lbtLastName.text = "String Int value"
+        lbtLastName.text = "String value"
         val valueData = GridData()
         valueData.grabExcessHorizontalSpace = true
         valueData.horizontalAlignment = GridData.FILL

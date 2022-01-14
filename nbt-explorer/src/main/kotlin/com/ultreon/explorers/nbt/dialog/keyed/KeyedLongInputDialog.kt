@@ -19,7 +19,7 @@ class KeyedLongInputDialog(parentShell: Shell?) : TitleAreaDialog(parentShell) {
 
     override fun create() {
         super.create()
-        setTitle("Create New Long Value")
+        setTitle("Create New Long Int Value")
 //        setMessage("This is a TitleAreaDialog", IMessageProvider.INFORMATION)
     }
 

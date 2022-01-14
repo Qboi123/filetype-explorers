@@ -92,46 +92,55 @@ class NbtExplorer(file: File?) : ExplorerWindow(file) {
 
         compoundMenuItem = MenuItem(createMenu, SWT.PUSH)
         compoundMenuItem.text = "New &Compound"
+        compoundMenuItem.image = compoundImage
         compoundMenuItem.setData("OnWidgetSelected", Runnable(::createCompound))
         compoundMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         listMenuItem = MenuItem(createMenu, SWT.PUSH)
         listMenuItem.text = "New &List"
+        listMenuItem.image = listImage
         listMenuItem.setData("OnWidgetSelected", Runnable(::createList))
         listMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         byteMenuItem = MenuItem(createMenu, SWT.PUSH)
         byteMenuItem.text = "New &Byte"
+        byteMenuItem.image = byteImage
         byteMenuItem.setData("OnWidgetSelected", Runnable(::createByte))
         byteMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         shortMenuItem = MenuItem(createMenu, SWT.PUSH)
         shortMenuItem.text = "New &Short Int"
+        shortMenuItem.image = shortImage
         shortMenuItem.setData("OnWidgetSelected", Runnable(::createShort))
         shortMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         intMenuItem = MenuItem(createMenu, SWT.PUSH)
         intMenuItem.text = "New &Int"
+        intMenuItem.image = intImage
         intMenuItem.setData("OnWidgetSelected", Runnable(::createInt))
         intMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         longMenuItem = MenuItem(createMenu, SWT.PUSH)
         longMenuItem.text = "New L&ong"
+        longMenuItem.image = longImage
         longMenuItem.setData("OnWidgetSelected", Runnable(::createLong))
         longMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         floatMenuItem = MenuItem(createMenu, SWT.PUSH)
         floatMenuItem.text = "New &Float"
+        floatMenuItem.image = floatImage
         floatMenuItem.setData("OnWidgetSelected", Runnable(::createFloat))
         floatMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         doubleMenuItem = MenuItem(createMenu, SWT.PUSH)
         doubleMenuItem.text = "New &Double"
+        doubleMenuItem.image = doubleImage
         doubleMenuItem.setData("OnWidgetSelected", Runnable(::createDouble))
         doubleMenuItem.addSelectionListener(MenuBarEventHandlers())
 
         stringMenuItem = MenuItem(createMenu, SWT.PUSH)
         stringMenuItem.text = "New &String"
+        stringMenuItem.image = textImage
         stringMenuItem.setData("OnWidgetSelected", Runnable(::createString))
         stringMenuItem.addSelectionListener(MenuBarEventHandlers())
     }
@@ -186,7 +195,7 @@ class NbtExplorer(file: File?) : ExplorerWindow(file) {
                     val treeItem = TreeItem(selected, SWT.NONE, index)
                     treeItem.setText(arrayOf(index.toString(), "Compound", ""))
                     treeItem.setData("NBTData", data[index])
-                    treeItem.image = listImage
+                    treeItem.image = compoundImage
                 }
             }
         }
