@@ -1,0 +1,12 @@
+# Project exclude paths
+/.gradle/
+/core/build/
+/core/build/classes/java/main/
+/nbt-explorer/build/
+/nbt-explorer/build/classes/java/main/
+/build/
+
+.idea/
+.gradle/
+natives/
+run/

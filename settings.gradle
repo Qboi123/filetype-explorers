@@ -1,0 +1,3 @@
+rootProject.name = 'nzt-explorer'
+include ":core"
+include ":nbt-explorer"
